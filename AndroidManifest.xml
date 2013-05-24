@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.willsj.android.thirdyeardemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="13" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:hardwareAccelerated="false" android:allowClearUserData="false">
+        <activity
+            android:label="@string/app_name"
+            android:name=".ThirdYearProjectDemonstrationTwo" android:screenOrientation = "nosensor">>
+
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PrototypeTwo" android:label="Prototype Two" android:screenOrientation = "nosensor">></activity>
+        <activity android:label="Prototype One" android:name=".PrototypeOne" android:screenOrientation = "nosensor">>
+            </activity>
+        <activity android:name=".PrototypeThree" android:label="Prototype Three" android:screenOrientation = "nosensor">></activity>
+        <activity android:label="Java Built Benchmark" android:name=".JavaBuiltBenchmark" android:screenOrientation = "nosensor">></activity>
+        <activity android:label="Renderscript Prototype" android:name=".RenderscriptPrototype" android:screenOrientation = "nosensor"></activity>
+        <activity android:name=".RenderscriptPrototypeTwo" android:label="Renderscript Prototype Two" android:screenOrientation = "nosensor"></activity>
+        <activity android:name=".RenderScriptBuiltBenchmark" android:label="RenderScript Built Benchmark" android:screenOrientation = "nosensor"></activity>
+    </application>
+
+</manifest>

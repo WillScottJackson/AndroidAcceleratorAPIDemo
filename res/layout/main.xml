@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to William Scott-Jackson's Third Year Project Demonstration Application"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="93dp"
+        android:layout_toLeftOf="@+id/textView1" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Early Program Prototypes"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/prototypeOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableRow1"
+        android:text="First Benchmark Prototype" />
+
+    <Button
+        android:id="@+id/prototypeTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/prototypeOne"
+        android:layout_below="@+id/prototypeOne"
+        android:text="Second Benchmark Prototype" />
+
+    <Button
+        android:id="@+id/prototypeThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/prototypeTwo"
+        android:layout_below="@+id/prototypeTwo"
+        android:text="Third Benchmark Prototype" />
+
+    <Button
+        android:id="@+id/renderscriptPrototype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/prototypeThree"
+        android:layout_below="@+id/prototypeThree"
+        android:text="First RenderScript Prototype" />
+
+    <Button
+        android:id="@+id/javaBuiltTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prototypeOne"
+        android:layout_alignBottom="@+id/prototypeOne"
+        android:layout_centerHorizontal="true"
+        android:text="Java Built Benchmark Test" />
+
+    <Button
+        android:id="@+id/renderscriptBuiltTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prototypeThree"
+        android:layout_centerHorizontal="true"
+        android:text="RenderScript Built Benchmark Test" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tableRow1"
+        android:layout_centerHorizontal="true"
+        android:text="Completed Programs"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/renderscriptPrototypeTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/renderscriptPrototype"
+        android:layout_below="@+id/renderscriptPrototype"
+        android:text="Second RenderScript Prototype" />
+
+</RelativeLayout>
